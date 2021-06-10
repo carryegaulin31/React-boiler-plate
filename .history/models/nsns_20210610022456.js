@@ -1,4 +1,4 @@
-const Nsns = (connection, Sequelize) => connection.define('nsns', {
+const  (connection, Sequelize) => connection.define('nsns', {
   NIIN: { type: Sequelize.INTEGER(9), allowUnsigned: false, allowNull: false },
   NAME: { type: Sequelize.STRING(80), allowNull: false },
   INC: { type: Sequelize.INTEGER(5), allowUnsigned: false, allowNull: false },
@@ -9,5 +9,3 @@ const Nsns = (connection, Sequelize) => connection.define('nsns', {
   PUBLICATION_DATE: Sequelize.STRING(10),
   allowNull: false,
 })
-
-module.exports = Nsns
