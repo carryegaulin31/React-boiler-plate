@@ -7,7 +7,7 @@ font-size: 40px;
 font-weight: 600;
 margin-bottom: 20px;
 font-style: italic;
-color: white;
+color: bl;
 `
 
 const Subtitle = styled.div`
