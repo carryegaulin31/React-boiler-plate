@@ -1,5 +1,3 @@
-/* eslint-disable import/no-named-as-default-member */
-/* eslint-disable import/no-named-as-default */
 import Sequelize from 'sequelize'
 import allConfigs from '../config/sequelize'
 import NsnModel from './nsns'
@@ -11,12 +9,3 @@ const config = allConfigs[environment]
 const connection = new Sequelize(config.database, config.username, config.password, {
   host: config.host, dialect: config.dialect,
 })
-
-const Nsns = NsnModel(connection, Sequelize)
-const NsnFlisParts = NsnFlisPartsModel(connection, Sequelize)
-
-export default {
-  Nsns,
-  NsnFlisParts,
-  Sequelize,
-}

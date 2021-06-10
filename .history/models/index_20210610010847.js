@@ -12,11 +12,4 @@ const connection = new Sequelize(config.database, config.username, config.passwo
   host: config.host, dialect: config.dialect,
 })
 
-const Nsns = NsnModel(connection, Sequelize)
-const NsnFlisParts = NsnFlisPartsModel(connection, Sequelize)
-
-export default {
-  Nsns,
-  NsnFlisParts,
-  Sequelize,
-}
+const 

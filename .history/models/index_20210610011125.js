@@ -19,4 +19,3 @@ export default {
   Nsns,
   NsnFlisParts,
   Sequelize,
-}

@@ -15,8 +15,8 @@ const connection = new Sequelize(config.database, config.username, config.passwo
 const Nsns = NsnModel(connection, Sequelize)
 const NsnFlisParts = NsnFlisPartsModel(connection, Sequelize)
 
-export default {
+export default (
   Nsns,
   NsnFlisParts,
-  Sequelize,
-}
+  Sequelize
+)
