@@ -11,6 +11,6 @@ background-color: white ;
 `
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default (/*{ term, setter }*/) => (
+export default (/{ term, setter }) => (
     <Input type="text" name="search" value={term} onChange={event => setter(event.target.value)} />
   )
