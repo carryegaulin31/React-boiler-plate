@@ -13,7 +13,7 @@ module.exports = {
       RNAAC: { type: Sequelize.STRING(2), allowNull: false },
       STATUS: { type: Sequelize.STRING(1), allowNull: false },
       MSDS: { type: Sequelize.STRING(5), allowNull: false },
-      SADC: { type: Sequelize.STRING(2) },
+      SADC: { type: Sequelize.STRING(2), allowNull: false },
       FSC: { type: Sequelize.INTEGER(5), allowNull: false },
       PUBLICATION_DATE: { type: Sequelize.STRING(10), allowNull: false },
     })
