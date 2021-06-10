@@ -5,7 +5,7 @@ const getAllNsns = async (request, response) => {
     attributes: ['NIIN', 'NAME', 'ITEM_NUMBER'],
   })
 
-  return response.send(allNsns)
+  return response.send(allNsns
 }
 
 module.exports = { getAllNsns }

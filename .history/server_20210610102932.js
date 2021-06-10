@@ -1,7 +1,7 @@
 import express from 'express'
 // import bodyParser from 'body-parser'
 import path from 'path'
-import { getAllNsns } from './controllers/nsn'
+import { getAllNsns } from './controllers/'
 
 const app = express()
 

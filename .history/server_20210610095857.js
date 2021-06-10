@@ -1,5 +1,5 @@
 import express from 'express'
-// import bodyParser from 'body-parser'
+import bodyParser from 'body-parser'
 import path from 'path'
 import { getAllNsns } from './controllers/nsn'
 
@@ -7,7 +7,7 @@ const app = express()
 
 app.use(express.static('public'))
 
-app.get('/api', getAllNsns)
+app.get('/', getAllNsns)
 
 app.all('*', (request, response) => response.sendFile(path.resolve(__dirname, 'public', 'index.html')))
 

@@ -1,11 +1,12 @@
+/* eslint-disable no-unused-vars */
 import models from '../models'
 
-const getAllNsns = async (request, response) => {
+export const getAllNsns = async (req, res) => {
   const allNsns = await models.Nsns.findAll({
     attributes: ['NIIN', 'NAME', 'ITEM_NUMBER'],
   })
 
-  return response.send(allNsns)
+  return allNsns
 }
 
 module.exports = { getAllNsns }

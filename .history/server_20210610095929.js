@@ -7,7 +7,7 @@ const app = express()
 
 app.use(express.static('public'))
 
-app.get('/api', getAllNsns)
+app.get('/', getAllNsns)
 
 app.all('*', (request, response) => response.sendFile(path.resolve(__dirname, 'public', 'index.html')))
 
