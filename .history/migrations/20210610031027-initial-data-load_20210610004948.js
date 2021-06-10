@@ -199,8 +199,12 @@ module.exports = {
      */
   },
 
-  down: async (queryInterface) => {
-    await queryInterface.dropTable('nsn')
-    return queryInterface.dropTable('nsn_flis_parts')
+  down: async (queryInterface, Sequelize) => {
+    /**
+     * Add reverting commands here.
+     *
+     * Example:
+     * await queryInterface.dropTable('users');
+     */
   }
 };

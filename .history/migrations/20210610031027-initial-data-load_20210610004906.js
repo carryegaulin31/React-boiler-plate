@@ -141,7 +141,7 @@ module.exports = {
       { NIIN: 80, NAME: 'HOSE ASSEMBLY,NONMETALLIC', INC: 20311, FSC: 4720, FSG: 0, COUNTRY_CODE: 0, ITEM_NUMBER: 0, PUBLICATION_DATE: 'AUG 2013' },
       { NIIN: 81, NAME: 'HOSE,NONMETALLIC', INC: 22670, FSC: 4720, FSG: 0, COUNTRY_CODE: 0, ITEM_NUMBER: 0, PUBLICATION_DATE: 'AUG 2013' },
       { NIIN: 82, NAME: 'IMPELLER,FAN,AXIAL', INC: 10087, FSC: 4140, FSG: 0, COUNTRY_CODE: 0, ITEM_NUMBER: 0, PUBLICATION_DATE: 'AUG 2013' },
-      // { NIIN: 83, NAME: 'WIRING HARNESS', INC: 00450, FSC: 5995, FSG: 0, COUNTRY_CODE: 0, ITEM_NUMBER: 0, PUBLICATION_DATE: 'AUG 2013' },
+      { NIIN: 83, NAME: 'WIRING HARNESS', INC: 00450, FSC: 5995, FSG: 0, COUNTRY_CODE: 0, ITEM_NUMBER: 0, PUBLICATION_DATE: 'AUG 2013' },
       { NIIN: 84, NAME: 'HOSE,PREFORMED', INC: 17271, FSC: 4720, FSG: 0, COUNTRY_CODE: 0, ITEM_NUMBER: 0, PUBLICATION_DATE: 'AUG 2013' },
       // { NIIN: 85, NAME: 'RETAINER', 77777, INC: 5330, FSC: 0, FSG: 0, COUNTRY_CODE: 0, ITEM_NUMBER: 'AUG 2013 PUBLICATION_DATE:' },
       { NIIN: 86, NAME: 'REDUCER,TUBE', INC: 08506, FSC: 4730, FSG: 0, COUNTRY_CODE: 0, ITEM_NUMBER: 0, PUBLICATION_DATE: 'AUG 2013' },
@@ -199,8 +199,12 @@ module.exports = {
      */
   },
 
-  down: async (queryInterface) => {
-    await queryInterface.dropTable('nsn')
-    return queryInterface.dropTable('nsn_flis_parts')
+  down: async (queryInterface, Sequelize) => {
+    /**
+     * Add reverting commands here.
+     *
+     * Example:
+     * await queryInterface.dropTable('users');
+     */
   }
 };
