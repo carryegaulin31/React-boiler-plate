@@ -11,10 +11,14 @@
     vertical-align: middle;
 }
 
+a {
+    
+}
 
 #search {
     height: 60px;
 }
+
 
 #search, #button {
     float: right;
