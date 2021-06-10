@@ -1,0 +1,24 @@
+::placeholder {
+    color:deepskyblue;
+    text-align: center;
+    
+}
+
+.Logo {
+    width: 20%;
+    padding-right: 80%;
+    align-self: center;
+    vertical-align: middle;
+}
+
+a {
+    
+}
+
+#search {border-radius: 25px;
+  border: 2px solid #73AD21;
+}
+
+#button {
+    
+}

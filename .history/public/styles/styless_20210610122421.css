@@ -1,0 +1,9 @@
+::placeholder {
+    color:deepskyblue
+}
+
+.image {
+    width: 20%;
+    padding-right: 80%;
+    align-self: center;
+}
