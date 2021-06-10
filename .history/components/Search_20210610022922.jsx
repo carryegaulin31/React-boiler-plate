@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from './styled-components'
 
 const Input = styled.input`
 border-radius: 8px;
@@ -11,6 +11,6 @@ background-color: white ;
 `
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default (/* { term, setter } */) => (
-  <Input type="text" name="search" value={term} onChange={event => setter(event.target.value)} />
-)
+export default (/*{ term, setter }*/) => (
+    <Input type="text" name="search" value={term} onChange={event => setter(event.target.value)} />
+  )
